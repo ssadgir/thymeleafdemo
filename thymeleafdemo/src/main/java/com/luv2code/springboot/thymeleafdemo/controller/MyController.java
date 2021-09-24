@@ -10,6 +10,7 @@ public class DemoController {
     @GetMapping("/hello")
     public String sayHello(Model theModel) {
         theModel.addAttribute("theDate", new java.util.Date());
+        System.out.println("heoooo");
         return "helloworld";
 
     }
